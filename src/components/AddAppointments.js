@@ -3,9 +3,10 @@ import {FaPlus} from 'react-icons/fa';
 
 function AddAppointments(props) {
 
+  const today = (new Date).toISOString().split('T')[0]
   const [petName, setPetName] = useState('')
   const [ownerName, setOwnerName] = useState('')
-  const [aptDate, setAptDate] = useState((new Date).toISOString().split('T')[0])
+  const [aptDate, setAptDate] = useState(today)
   const [aptTime, setAptTime] = useState('')
   const [aptNotes, setAptNotes] = useState('')
 
@@ -21,7 +22,7 @@ function AddAppointments(props) {
 
     setPetName('')
     setOwnerName('')
-    setAptDate((new Date).toISOString().split('T')[0])
+    setAptDate(today)
     setAptTime('')
     setAptNotes('')
 

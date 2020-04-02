@@ -34,7 +34,6 @@ function App() {
     let aptIndex = findIndex(myAppointments, {
       aptId: id
     });
-    console.log(tempApts[aptIndex])
     tempApts[aptIndex][name] = value;
       updateMyAppointments(tempApts);
   }
@@ -68,7 +67,7 @@ function App() {
     updateOrderBy(order);
     updateOrderDir(dir)
   }
-  
+
   let order;
   let filteredApts = myAppointments;
   orderDir === 'asc' ? order = 1 : order  = -1;
