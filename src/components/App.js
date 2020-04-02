@@ -16,7 +16,12 @@ function App() {
   const [lastIndex, updateLastIndex] = useState(0)
 
   useEffect(() => {
-    fetch('./data.json')
+    fetch('./data.json', {
+      headers : {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+       }
+    })
       .then(response => response.json())
       .then(data => {
         const apts = data.map((item, index) => {
