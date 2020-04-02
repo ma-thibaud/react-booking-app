@@ -1,6 +1,5 @@
 import React, {useState} from 'react';
 import {FaPlus} from 'react-icons/fa';
-import Moment from 'react-moment';
 
 function AddAppointments(props) {
 
