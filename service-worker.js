@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/react-booking-app/precache-manifest.0377d73d098478f6c3de7629953f5e57.js"
+  "/react-booking-app/precache-manifest.edf3e15df0d45d863a0bfe0755d5084d.js"
 );
 
 self.addEventListener('message', (event) => {
