@@ -54,7 +54,6 @@ function App() {
     // updateLastIndex(lastIndex + 1)
     tempApts.unshift(apt)
     updateMyAppointments(tempApts)
-    console.log(myAppointments)
   }
 
   // Delete appointments
